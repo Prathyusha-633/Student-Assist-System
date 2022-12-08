@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Registration</title>
+</head>
+<body bgcolor = "white"> 
+<a href="p" target="sai3"style="text-decoration : none">
+<center>
+<h1>Registration Page</h1>
+<script type="text/javascript">
+function log()
+{
+var n = document.myform.name.value;
+var Password = document.myform.Password.value;
+var comform = document.myform.con.value;
+var email = document.myform.mail.value;
+var number = document.myform.num.value;
+if(n.length < 3)
+{
+alert("Enter the valid/full Name...!")
+}
+if(Password.length < 8)
+{
+alert("Password characters must be atleast 8 characters Long...! ");
+return false;
+}
+if (Password === comform)
+{
+return true;
+}
+else
+{
+alert("Password must be Same...!");
+return false;
+}
+}
+</script>
+
+<form name = "myform" method="post" onsubmit= "return log()">
+Name : <input type="text" name="name" placeholder="Enter Name" required> <br>
+<br>
+Password : <input type="password" name="Password" placeholder="Enter Password"
+required> <br> <br>
+conform Password : <input type="password" name="con" placeholder="Re-enter
+Password" required> <br> <br>
+
+<br>
+<input type="submit" name="" value="Register"/>
+</form>
+
+</center>
+</body>
+</html>

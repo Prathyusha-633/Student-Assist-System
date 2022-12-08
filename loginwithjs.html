@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Login</title>
+</head>
+<body bgcolor = "white"> <center>
+<h1>Login Page</h1>
+<script type="text/javascript">
+function log()
+{
+var n = document.myform.name.value;
+var Password = document.myform.Password.value;
+if (n.length == 0 || n === ' ')
+{
+alert("Name can't be Blank....!");
+return false;
+}
+else if(Password.length < 8)
+{
+alert("Password characters must be atleast 8 characters Long...! ");
+return false;
+}
+}
+
+</script>
+<form name = "myform" method="post" onsubmit= "return log()">
+Name : <input type="text" name="name" placeholder="Enter Name"> <br>
+<br>
+Password : <input type="password" name="Password" placeholder="Enter
+Password">
+<br> <br>
+<input type="submit" name="" value="Register"/>
+</form>
+</center>
+</body>
+</html>
